@@ -3,17 +3,19 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define testcase1 pow(2, 20)
-#define testcase2 pow(2, 24)
-#define testcase3 pow(2, 28)
+//fixed vector sizes
+#define SIZE1 pow(2, 20)
+#define SIZE2 pow(2, 24)
+#define SIZE3 pow(2, 28)
+//maximum value of randomly generated values
+#define MAX 20
 
 //extern double asmkernel(int n, double *A, double*B);
 
 int main() {
 	int i;
-	int n = testcase1; // vector size
-	double valueA = 12.43; // repeatedly used value for vectorB
-	double valueB = 84.69; // repeatedly used value for vectorB
+	int n = SIZE1; // vector size
+	double value; // random value that will populate vectors
 	double* A; // vectorA
 	double* B; // vectorB
 	double sdot;
@@ -30,12 +32,19 @@ int main() {
 		return 1;
 	}
 
-	// Initialize vectors with values
+	// Initialize vectors with random values
 	for (i = 0; i < n; i++) {
-		A[i] = valueA;
-		B[i] = valueB;
+		value = (double)rand() / RAND_MAX * MAX;
+		A[i] = value;
+		value= (double)rand() / RAND_MAX * MAX;
+		B[i] = value;
 	}
 
+	printf("Initialized array of double precision floating point values:\n");
+	for (i = 0; i < n; i++) {
+		printf("%f  %f\n", A[i], B[i]);
+	}
+	
 	//call asmkernel
 	//sdot = asmkernel(n, &A, &B);
 
