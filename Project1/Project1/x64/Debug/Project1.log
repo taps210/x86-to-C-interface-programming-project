@@ -1,4 +1,5 @@
 ﻿  main.c
-C:\Users\ACER\Downloads\Project1\Project1\main.c(17,10): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\Users\ACER\Downloads\Project1\Project1\main.c(21,9): warning C4101: 'sdot': unreferenced local variable
-  Project1.vcxproj -> C:\Users\ACER\Downloads\Project1\x64\Debug\Project1.exe
+C:\Users\ACER\Downloads\x86-to-C-interface-programming-project-main\x86-to-C-interface-programming-project-main\Project1\Project1\main.c(27,10): warning C4133: 'function': incompatible types - from 'FILE *' to 'const char *const '
+C:\Users\ACER\Downloads\x86-to-C-interface-programming-project-main\x86-to-C-interface-programming-project-main\Project1\Project1\main.c(32,10): warning C4133: 'function': incompatible types - from 'FILE *' to 'const char *const '
+C:\Users\ACER\Downloads\x86-to-C-interface-programming-project-main\x86-to-C-interface-programming-project-main\Project1\Project1\main.c(18,10): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Project1.vcxproj -> C:\Users\ACER\Downloads\x86-to-C-interface-programming-project-main\x86-to-C-interface-programming-project-main\Project1\x64\Debug\Project1.exe

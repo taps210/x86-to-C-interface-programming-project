@@ -10,8 +10,8 @@
 //maximum value of randomly generated values
 #define MAX 20
 
-//extern double asmkernel(int n, double *A, double*B);
-//extern float c_dot_product(int n, double *A, double *B, double *sdot)
+extern float asmkernel(int n, float *A, float *B);
+//extern float c_dot_product(int n, float *A, float *B, float sdot)
 
 int main() {
 	int i;
@@ -47,7 +47,8 @@ int main() {
 	}
 	
 	//call asmkernel
-	//sdot = asmkernel(n, &A, &B);
+	sdot = asmkernel(n, &A, &B);
+	printf("Dot Product of asm kernel: %f\n", sdot);
 
 	//call ckernel
 	//sdot = c_dot_product(n, A, B, &sdot);

@@ -10,9 +10,15 @@ asmkernel:
 	mov rbp, rsp
 	add rbp, 16
 		
-		xor rax, rax
-		;multiply:
-			;mov 
+		movss xmm0, 0
+		multiply:
+			movss xmm6, [rdx]
+			movss xmm7, [r8]
+			mulss xmm6, xmm7
+			addss xmm0, xmm6
+			add rdx, 4
+			add r8, 4
+			loop multiply
 			
 	pop rbp
 	ret
