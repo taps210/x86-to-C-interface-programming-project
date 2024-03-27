@@ -1,0 +1,2 @@
+^C:\USERS\ACER\DOWNLOADS\PROJECT1\PROJECT1\ASMKERNEL.ASM
+C:\nasm\nasm -f  win64 asmkernel.asm
