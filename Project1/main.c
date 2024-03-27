@@ -16,18 +16,18 @@
 int main() {
 	int i;
 	int n = SIZE1; // vector size
-	double value; // random value that will populate vectors
-	double* A; // vectorA
-	double* B; // vectorB
-	double sdot; //output
+	float value; // random value that will populate vectors
+	float* A; // vectorA
+	float* B; // vectorB
+	float sdot; //output
 
 	// Allocate memory for vectorA and vectorB dynamically
-	A = (double*)malloc(n * sizeof(double));
+	A = (float*)malloc(n * sizeof(float));
 	if (A == NULL) {
 		fprintf(stderr, "Memory allocation failed\n");
 		return 1;
 	}
-	B = (double*)malloc(n * sizeof(double));
+	B = (float*)malloc(n * sizeof(float));
 	if (B == NULL) {
 		fprintf(stderr, "Memory allocation failed\n");
 		return 1;
@@ -35,13 +35,13 @@ int main() {
 
 	// Initialize vectors with random values
 	for (i = 0; i < n; i++) {
-		value = (double)rand() / RAND_MAX * MAX;
+		value = (float)rand() / RAND_MAX * MAX;
 		A[i] = value;
-		value= (double)rand() / RAND_MAX * MAX;
+		value= (float)rand() / RAND_MAX * MAX;
 		B[i] = value;
 	}
 
-	printf("Initialized array of double precision floating point values:\n");
+	printf("Initialized array of single precision floating point values:\n");
 	for (i = 0; i < n; i++) {
 		printf("%f  %f\n", A[i], B[i]);
 	}
