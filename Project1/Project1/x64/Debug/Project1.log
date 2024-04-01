@@ -1,5 +1,5 @@
 ﻿  main.c
-C:\Users\ACER\Downloads\x86-to-C-interface-programming-project-main\x86-to-C-interface-programming-project-main\Project1\Project1\main.c(27,10): warning C4133: 'function': incompatible types - from 'FILE *' to 'const char *const '
-C:\Users\ACER\Downloads\x86-to-C-interface-programming-project-main\x86-to-C-interface-programming-project-main\Project1\Project1\main.c(32,10): warning C4133: 'function': incompatible types - from 'FILE *' to 'const char *const '
-C:\Users\ACER\Downloads\x86-to-C-interface-programming-project-main\x86-to-C-interface-programming-project-main\Project1\Project1\main.c(18,10): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-  Project1.vcxproj -> C:\Users\ACER\Downloads\x86-to-C-interface-programming-project-main\x86-to-C-interface-programming-project-main\Project1\x64\Debug\Project1.exe
+C:\Users\ACER\source\repos\x86-to-C-interface-programming-project\Project1\Project1\main.c(32,16): warning C4133: 'function': incompatible types - from 'FILE *' to 'const char *const '
+C:\Users\ACER\source\repos\x86-to-C-interface-programming-project\Project1\Project1\main.c(37,16): warning C4133: 'function': incompatible types - from 'FILE *' to 'const char *const '
+C:\Users\ACER\source\repos\x86-to-C-interface-programming-project\Project1\Project1\main.c(19,13): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Project1.vcxproj -> C:\Users\ACER\source\repos\x86-to-C-interface-programming-project\Project1\x64\Debug\Project1.exe

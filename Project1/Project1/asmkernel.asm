@@ -1,3 +1,4 @@
+; Group 4 - Bernardo, Fernandez - S16
 section .text
 bits 64
 default rel

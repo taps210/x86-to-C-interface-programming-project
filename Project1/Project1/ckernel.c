@@ -1,3 +1,4 @@
+// Group 4 - Bernardo, Fernandez - S16
 #include <immintrin.h>
 #include <stdio.h> 
 #include <stdlib.h> 
